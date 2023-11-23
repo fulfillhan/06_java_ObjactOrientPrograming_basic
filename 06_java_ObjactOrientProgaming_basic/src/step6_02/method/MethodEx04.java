@@ -12,9 +12,39 @@ class VariableEx{
 	 }
 }
 
+// this : 객체(오브젝트, 인스턴스) 자신
+class Zealot{
+	
+	int shield = 60;
+	int hp = 100;
+	
+	void printStatus() {
+		//this는 생략이 가능하고 기본적으로 생략되어 있다.
+		System.out.println("this : "+ this);
+		System.out.println("shield : "+ this.shield);// 너무 당연해서 this가 생략되어 있다.
+		System.out.println("hp : "+ this.hp);
+		System.out.println();
+	}
+	
+}
+
 public class MethodEx04 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {// z1일때는 this는 z1 의미
+		Zealot z1 = new Zealot();// 객체 생성
+		System.out.println("z1 : "+ z1);
+		z1.shield = 50;
+		z1.printStatus();
+		
+		Zealot z2 = new Zealot();// 객체 생성
+		System.out.println("z2 : "+ z2);
+		z2.shield = 0;
+		z2.hp = 0;
+		z2.printStatus();
+		
+		Zealot z3 = new Zealot();// 객체 생성
+		System.out.println("z3 : "+ z3);
+		z3.printStatus();
 		
 	}
 
