@@ -42,8 +42,7 @@ public class MethodEx11_문제 {
 			int cnt = e.test3(arr);
 			System.out.println("cnt = " + cnt);
 			
-			
-			
+					
 			// 문제 4) arr의 요소들의 짝수의 개수 리턴
 			// 정답 4) 3
 			cnt = e.test4(arr);

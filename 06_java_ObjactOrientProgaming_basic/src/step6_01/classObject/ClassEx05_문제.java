@@ -1,5 +1,5 @@
 package step6_01.classObject;
-
+//11-24 연습3
 import java.util.Scanner;
 
 /*
