@@ -7,28 +7,26 @@ import java.util.Scanner;
  * 1. 학번을 입력하면, 해당 학생의 성적이 출력된다.
  * 2. 단, 없는 학번 입력에 관한 예외상황을 반드시 처리해야 한다.
  * 3. 1등과 꼴등 학생의 정보를 확인할 수 있다.
- */
+ 
 
-/*
 class Ex05{
 	
 	String name = "";
-	
+	// 학번 배열 정의, 점수 정의
 	int[] arHakbun = {1001, 1002, 1003, 1004, 1005};
 	int[] arScore  = {  92,   38,   87,  100,   11};
 
-}
-*/
+}*/
 
 
 public class ClassEx05_문제 {
-
-	public static void main(String[] args) {
+	
+public static void main(String[] args) {
 
 		
 		Scanner scan = new Scanner(System.in);
 
-		//Ex05 mega = new Ex05();
+		Ex05_연습 mega = new Ex05_연습();
 		//mega.name = "메가IT 고등학교";
 		
 		while (true) {
@@ -45,16 +43,18 @@ public class ClassEx05_문제 {
 			System.out.print("메뉴 선택 : ");
 			int choice = scan.nextInt();
 			
-			if		(choice == 1) {}
+			
+			if(choice == 1) {}
 			else if (choice == 2) {}
 			else if (choice == 3) {}
 			else if (choice == 4) {}
 			else if (choice == 5) {
-				System.out.println("프로그램 종료");
-				break;
+			System.out.println("프로그램 종료");
+			break;
 			}
 		}
-
 	}
 
-}
+}	
+
+
