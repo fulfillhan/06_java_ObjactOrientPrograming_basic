@@ -1,5 +1,7 @@
 package step6_01.classObject;
 
+//2023-12-04
+
 /*
  * # OMR카드 : 클래스 + 변수
 
@@ -25,11 +27,10 @@ class Ex06{
 */
 
 
-
-public class ClassEx06_문제 {
-
+public class ClassEx06_연습 {
+	
 	public static void main(String[] args) {
-
+		
 	}
 
 }
