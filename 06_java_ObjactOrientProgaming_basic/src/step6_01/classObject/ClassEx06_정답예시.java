@@ -14,7 +14,7 @@ import java.util.Random;
  * 정오표     = {O, X, O, X, X}
  * 성적        = 40점
  */
-
+/*
 class Ex06 {
 	
 	int[] answer = {1, 3, 4, 2, 5};		// 시험답안
@@ -24,8 +24,9 @@ class Ex06 {
 	int score = 0;						// 성적
 	
 }
+*/
 
-
+/*
 public class ClassEx06_정답예시 {
 
 	public static void main(String[] args) {
@@ -72,3 +73,4 @@ public class ClassEx06_정답예시 {
 	}
 
 }
+*/

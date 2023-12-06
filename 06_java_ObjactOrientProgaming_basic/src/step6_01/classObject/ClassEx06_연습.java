@@ -1,5 +1,9 @@
 package step6_01.classObject;
 
+import java.io.StreamCorruptedException;
+import java.util.Arrays;
+import java.util.Random;
+
 //2023-12-04
 
 /*
@@ -16,7 +20,7 @@ package step6_01.classObject;
  * 성적        = 40점
  */
 
-/*
+
 class Ex06{
 	int[] answer = {1, 3, 4, 2, 5};		// 시험답안
 	int[] hgd = new int[5];				// 학생답안
@@ -24,12 +28,45 @@ class Ex06{
 	int answerCnt = 0;					// 정답 맞춘 개수
 	int score = 0;						// 성적
 }
-*/
+
 
 
 public class ClassEx06_연습 {
 	
 	public static void main(String[] args) {
+		Random random = new Random();
+		
+		
+		Ex06 e = new Ex06();//Ex06() 객체 생성
+		
+		System.out.print("hgd : [");
+		for (int i = 0; i < e.hgd.length; i++) {
+			e.hgd[i] = random.nextInt(5)+1;
+			System.out.print(e.hgd[i]+ " ");
+		}
+		System.out.println("]");
+		
+		System.out.print("answer : [");
+		for (int i = 0; i <e.answer.length; i++) {
+			System.out.print(e.answer[i]+ " ");
+		}
+		System.out.println("]");
+		
+		//정오표 출력
+		System.out.print("정오표 : [");
+		for (int i = 0; i < e.answer.length; i++) {
+			if (e.answer[i] == e.hgd[i]) {
+				e.answerCnt++;
+				System.out.print("O ");
+			}
+			else {
+				System.out.print("X ");
+			}
+		}
+		System.out.println("]");
+		//점수 비교
+		e.score = e.answerCnt * 20;
+		System.out.println("총 점수는 : "+ e.score+"점");
 		
 	}
 
