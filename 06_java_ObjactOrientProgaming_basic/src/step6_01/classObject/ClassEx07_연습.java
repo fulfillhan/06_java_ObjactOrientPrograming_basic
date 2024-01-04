@@ -1,7 +1,7 @@
 package step6_01.classObject;
 
-/*2023-12-28
- * # 영화관 좌석예매 : 클래스 + 
+
+ /* # 영화관 좌석예매 : 클래스 + 
 
  * 1. 사용자로부터 좌석번호(index)를 입력받아 예매하는 시스템이다.
  * 2. 예매가 완료되면 해당 좌석 값을 1로 변경한다.
@@ -26,23 +26,30 @@ package step6_01.classObject;
 
 import java.util.Scanner;
 
-/*
-class Ex07 {
+
+class Ex07_연습{
 
 	int[] seat = new int[7];
 	int money = 0;
 	int bookCnt = 0;
 	
 }
-*/
+
 
 public class ClassEx07_연습 {
 
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
+		Ex07_연습 e = new Ex07_연습();
 		
 		while (true) {
+			for (int i = 0; i < e.seat.length; i++) {
+				if(e.seat[i] == 0) {
+					System.out.println("[X] ");
+				}
+				else System.out.println("[O] ");
+			}
 			
 			System.out.println("[MEGA MOVIE]");
 			System.out.println("[1]좌석예매");
@@ -51,8 +58,18 @@ public class ClassEx07_연습 {
 			System.out.print("메뉴 선택 : ");
 			int sel = scan.nextInt();
 			
-			if		(sel == 1) {}
+			if		(sel == 1) {
+				System.out.print("좌석번호 선택(1~7) :");
+				int mySeat = scan.nextInt();
+				
+				if(e.seat[mySeat-1] == 0) {
+				 e.seat[mySeat-1] =1;
+				 e.bookCnt++;
+				}
+				else System.out.println("이미 예매가 완료된 자리입니다!");
+			}
 			else if (sel == 2) {
+				//여기서부터 
 				break;
 			}
 		}
