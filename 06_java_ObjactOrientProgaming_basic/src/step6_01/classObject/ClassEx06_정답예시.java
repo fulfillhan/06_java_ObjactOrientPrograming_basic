@@ -26,7 +26,7 @@ class Ex06 {
 }
 */
 
-/*
+
 public class ClassEx06_정답예시 {
 
 	public static void main(String[] args) {
@@ -73,4 +73,3 @@ public class ClassEx06_정답예시 {
 	}
 
 }
-*/
