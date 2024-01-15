@@ -18,7 +18,7 @@ package step6_01.classObject;
 //}
 
 
-public class ClassEx09_문제 {
+public class ClassEx09_연습 {
 
 	public static void main(String[] args) {		
 		
