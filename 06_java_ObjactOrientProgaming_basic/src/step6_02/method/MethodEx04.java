@@ -35,16 +35,30 @@ public class MethodEx04 {
 		System.out.println("z1 : "+ z1);
 		z1.shield = 50;
 		z1.printStatus();
+//		z1 : step6_02.method.Zealot@2f92e0f4
+//		this : step6_02.method.Zealot@2f92e0f4
+//		shield : 50
+//		hp : 100
+		
 		
 		Zealot z2 = new Zealot();// 객체 생성
-		System.out.println("z2 : "+ z2);
+		System.out.println("z2 : "+ z2);//주소
 		z2.shield = 0;
 		z2.hp = 0;
 		z2.printStatus();
+//		z2 : step6_02.method.Zealot@681a9515
+//		this : step6_02.method.Zealot@681a9515
+//		shield : 0
+//		hp : 0
+		
 		
 		Zealot z3 = new Zealot();// 객체 생성
 		System.out.println("z3 : "+ z3);
 		z3.printStatus();
+//		z3 : step6_02.method.Zealot@3af49f1c
+//		this : step6_02.method.Zealot@3af49f1c
+//		shield : 60
+//		hp : 100
 		
 	}
 
