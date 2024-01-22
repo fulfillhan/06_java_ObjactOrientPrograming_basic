@@ -1,6 +1,7 @@
 package step6_02.method;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 class SpeedGame {
