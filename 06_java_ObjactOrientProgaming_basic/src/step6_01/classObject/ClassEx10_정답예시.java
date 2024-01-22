@@ -1,6 +1,7 @@
 package step6_01.classObject;
 /*
  * # 영수증 출력하기 : 클래스 + 변수
+
  * 1. 햄버거 주문을 받아 영수증을 출력한다.
  * 2. 출력내용은 각 메뉴의 주문 수량과 총 금액 및 잔돈을 표시한다.
  * 
@@ -68,6 +69,7 @@ public class ClassEx10_정답예시 {
 						e.totalPrice += e.orderCnt[i] * e.menuPrices[i];
 					}
 				}
+				
 				System.out.println("----------------------");
 				System.out.println("ITEM" + "	\t"+ "QTY" + "\t" + "AMT");
 				
@@ -88,12 +90,13 @@ public class ClassEx10_정답예시 {
 					System.out.println("----------------------");
 					System.out.println(">>잔돈 : " + deposit + "원");
 					scan.close();
-					break;
+					break;//  어차피 여기서 끝날거기 때문에
 				}
 				
 				else  {
 					System.out.println("[메세지] 입금액 부족 / 확인하세요");
 					isInsufficient = true;
+					//다시 주문번호 목록쪽으로 이동한다.
 				}
 				
 			}
