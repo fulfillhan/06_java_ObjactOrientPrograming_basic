@@ -21,17 +21,17 @@ package step6_01.classObject;
  */
 
 import java.util.Scanner;
-
-class Ex11 {
-
-	String[] arAcc = new String[5];
-	String[] arPw  = new String[5];
-	int[] arMoney  = new int[5];
-	
-	int accCnt = 0;
-	int identifier = -1;
-	
-}
+//
+////class Ex11 {
+//
+//	String[] arAcc = new String[5];
+//	String[] arPw  = new String[5];
+//	int[] arMoney  = new int[5];
+//	
+//	int accCnt = 0;
+//	int identifier = -1;
+//	
+//}
 
 
 public class ClassEx11_정답예시 {
@@ -83,6 +83,7 @@ public class ClassEx11_정답예시 {
 				for (int i = 0; i < e.arAcc.length; i++) {
 					if(e.arAcc[i].equals(acc)) {
 						check = -1;
+						break;
 					}
 				}
 				
